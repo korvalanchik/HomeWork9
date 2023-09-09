@@ -1,6 +1,5 @@
 package HW9;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 
 public class MyArrayList {
@@ -54,5 +53,14 @@ public class MyArrayList {
         final Object[] delData = data;
         for (int to = size, i = size = 0; i < to; i++)
             delData[i] = null;
+    }
+
+    @Override
+    public String toString() {
+        StringBuilder strList = new StringBuilder();
+        for(int i=0;i<size;i++) {
+            strList.append(data[i]).append(" ");
+        }
+        return '{' + strList.toString() + '}';
     }
 }
