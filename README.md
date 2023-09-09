@@ -1,4 +1,4 @@
-Реалізация ArrayList<\n>
-Реалізация ArrayList
+Реалізация ArrayList   
+Реалізация ArrayList   
 Start Demo
 # HomeWork9
