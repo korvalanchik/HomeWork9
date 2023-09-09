@@ -13,11 +13,10 @@ public class MyArrayList {
         size = 0;
     }
     public void add(Object value) {
-        int s = size;
+        int s = data.length + DELTA_CAPACITY;
         if(size == data.length-1){        // increase [] length on DELTA_CAPACITY
             Object[] tempData = new Object[data.length];
             tempData = Arrays.copyOf(data, data.length);
-            s = data.length + DELTA_CAPACITY;
             data = new Object[s];
             data = Arrays.copyOf(tempData, s);
         }
