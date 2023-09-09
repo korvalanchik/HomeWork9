@@ -29,5 +29,35 @@ public class demo {
         System.out.println(list);
 //        System.out.println(list.get(0)); // call to a non-existent element
 
+        MyLinkedList <String> stringList = new MyLinkedList<>();
+        System.out.println("\nForming linked list");
+        stringList.add("first go");
+        stringList.add("second go");
+        stringList.add("third go");
+        stringList.add("fourth go");
+        stringList.add("fifth go");
+        stringList.add("sixth go");
+        for (int i=0; i< stringList.size(); i++) {
+            System.out.print(stringList.get(i) + " ");
+        }
+        stringList.remove(2);
+        System.out.println("\nRemove third element");
+        for (int i=0; i< stringList.size(); i++) {
+            System.out.print(stringList.get(i) + " ");
+        }
+        stringList.remove(0);
+        System.out.println("\nRemove first element");
+        for (int i=0; i< stringList.size(); i++) {
+            System.out.print(stringList.get(i) + " ");
+        }
+        stringList.remove(stringList.size()-1);
+        System.out.println("\nRemove last element");
+        for (int i=0; i< stringList.size(); i++) {
+            System.out.print(stringList.get(i) + " ");
+        }
+        System.out.println("\nSize list = " + stringList.size());
+        stringList.clear();
+        System.out.println("After cleaning size list = " + stringList.size());
+
     }
 }
