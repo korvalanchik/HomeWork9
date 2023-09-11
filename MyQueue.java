@@ -3,7 +3,7 @@ package HW9;
 public class MyQueue <T> extends MyLinkedList<T>{
     private MyQueue.Node<T> head;
     private MyQueue.Node<T> tail;
-//    private int size;
+    private int size;
     public void add(T value) {
         MyQueue.Node<T> node = new MyQueue.Node<>(value);
         if(head == null){
