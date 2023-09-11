@@ -59,6 +59,25 @@ public class demo {
         stringList.clear();
         System.out.println("After cleaning size list = " + stringList.size());
 
+        System.out.println("\nNow Queue");
+        MyQueue<String> myQueue = new MyQueue<>();
+        myQueue.add("But I am a first");
+        myQueue.add("And I am a second");
+        myQueue.add("And I am a third");
+        myQueue.add("I am a last");
+        System.out.println("In line at the store " + myQueue.size());
+        System.out.println(myQueue.peek());
+        System.out.println("I know. Get out!");
+        System.out.println(myQueue.poll() + ". I'm leaving. Who is next?" );
+        System.out.println(myQueue.peek());
+        System.out.println("Get out!");
+        myQueue.poll();
+        System.out.println(myQueue.peek());
+        System.out.println("That's all, the store is closed");
+        myQueue.clear();
+        System.out.println(myQueue.peek() + " Size=" + myQueue.size());
+
+
         System.out.println("\nCheckin hashmap. Let's go");
         MyHashMap<String, String> myMap = new MyHashMap<>();
         myMap.put("6", "PrivatBank");

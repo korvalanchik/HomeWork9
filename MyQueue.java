@@ -14,7 +14,7 @@ public class MyQueue <T> extends MyLinkedList<T>{
             node.previous = tail;
             tail = node;
         }
-        size++;
+        this.size++;
     }
 
     public T peek() {
@@ -34,7 +34,10 @@ public class MyQueue <T> extends MyLinkedList<T>{
 
     public void clear() {
         head = tail = null;
-        size = 0;
+        this.size = 0;
     }
 
+    public int size() {
+        return size;
+    }
 }

@@ -28,7 +28,7 @@ public class MyLinkedList<T> {
         return curr.value;
     }
 
-    public void remove(int index) {
+    public final void remove(int index) {
         Objects.checkIndex(index, size);
         Node<T> curr = head;
         Node<T> temp;
