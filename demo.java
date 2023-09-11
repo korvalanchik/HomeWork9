@@ -1,7 +1,5 @@
 package HW9;
 
-import java.util.Map;
-
 public class demo {
     public static void main(String[] args) {
         MyArrayList list = new MyArrayList();
