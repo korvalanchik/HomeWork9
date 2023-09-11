@@ -1,5 +1,7 @@
 package HW9;
 
+import java.util.Map;
+
 public class demo {
     public static void main(String[] args) {
         MyArrayList list = new MyArrayList();
@@ -59,5 +61,35 @@ public class demo {
         stringList.clear();
         System.out.println("After cleaning size list = " + stringList.size());
 
+        System.out.println("\nCheckin hashmap. Let's go");
+        MyHashMap<String, String> myMap = new MyHashMap<>();
+        myMap.put("6", "PrivatBank");
+        myMap.put("16", "Pireus Bank");
+        myMap.put("3", "Raiffeisen");
+        myMap.put("9", "Oshadbank");
+        myMap.put("1", "UkrSibBank");
+        myMap.put("2", "Credi Agricol Bank");
+        myMap.put("5", "OTP Bank");
+        myMap.put("7", "Procreditbank");
+        myMap.put("12", "Universal Bank");
+        myMap.put("10", "UkrEximBank");
+        myMap.put("11", "UkrGasBank");
+        myMap.put("8", "PUMB");
+        myMap.put("13", "Pivdeniy");
+        myMap.put("14", "Pravex Bank");
+        myMap.put("15", "Sens Bank");
+//        myMap.put("15", "Cunning Bank");       //Exception Double Key
+        System.out.println("Put 15 pairs (Key, Value). Key '4' is absent");
+        System.out.println("Size: " + myMap.size());
+        System.out.println("Get the value by keys: 15, 4, 1, 16");
+        System.out.println(myMap.get("15") + " " + myMap.get("4") + " " + myMap.get("1") + " " + myMap.get("16"));
+        System.out.println("Removing on Key '15'");
+        myMap.remove("15");
+        System.out.println(myMap.get("15") + " " + myMap.get("4") + " " + myMap.get("1") + " " + myMap.get("16"));
+        System.out.println("Size: " + myMap.size());
+        System.out.println("And we'll clean everything");
+        myMap.clear();
+        System.out.println("Size: " + myMap.size());
+        System.out.println(myMap.get("15") + " " + myMap.get("4") + " " + myMap.get("1") + " " + myMap.get("16"));
     }
 }
