@@ -77,6 +77,25 @@ public class demo {
         myQueue.clear();
         System.out.println(myQueue.peek() + " Size=" + myQueue.size());
 
+        System.out.println("\nAnd now Stack");
+        MyStack<String> myStack = new MyStack<>();
+        myStack.push("Giant");
+        myStack.push("Biggest");
+        myStack.push("Big");
+        myStack.push("Medium");
+        myStack.push("Small");
+        myStack.push("Very small");
+        myStack.push("Smallest");
+        System.out.println("Size = " + myStack.size());
+        System.out.println("Above is " + myStack.peek());
+        myStack.remove(1);
+        System.out.print(myStack.pop() + " ");
+        System.out.print(myStack.pop() + " ");
+        System.out.print(myStack.pop() + " ");
+        System.out.print(myStack.pop() + " ");
+        System.out.print(myStack.pop() + " ");
+        System.out.println(myStack.pop() + " ");
+        System.out.println("Size = " + myStack.size());
 
         System.out.println("\nCheckin hashmap. Let's go");
         MyHashMap<String, String> myMap = new MyHashMap<>();
