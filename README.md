@@ -1,1 +1,4 @@
-Реалізация ArrayList# HomeWork9
+Реалізация ArrayList   
+Реалізация LinkedList   
+Start Demo
+# HomeWork9
