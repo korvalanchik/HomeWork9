@@ -89,8 +89,8 @@ public class MyHashMap<K, V> {
     }
 
     public static class Entry<K, V> {
-        private K key;
-        private V value;
+        private final K key;
+        private final V value;
         private Entry<K, V> next;
 
         public Entry(K key, V value, Entry<K, V> next) {
