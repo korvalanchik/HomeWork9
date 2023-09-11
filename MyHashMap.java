@@ -6,8 +6,12 @@ import java.util.Arrays;
 
 public class MyHashMap<K, V> {
     private static final int MAP_CAPACITY = 8;
-    private Entry<K, V>[] entries = new Entry[MAP_CAPACITY];
+    private Entry<K, V>[] entries;
     private int size;
+
+    public MyHashMap() {
+        entries = new Entry[MAP_CAPACITY];
+    }
 
     public void put(K key, V value) {
         int index = bucketIndex(key);
