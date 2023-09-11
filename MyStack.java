@@ -61,7 +61,6 @@ public class MyStack <T> extends MyLinkedList<T> {
         size--;
     }
 
-
     public void clear() {
         up = down = null;
         this.size = 0;
@@ -70,5 +69,4 @@ public class MyStack <T> extends MyLinkedList<T> {
     public int size() {
         return size;
     }
-
 }
