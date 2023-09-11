@@ -6,7 +6,7 @@ import java.util.Arrays;
 
 public class MyHashMap<K, V> {
     private static final int MAP_CAPACITY = 8;
-    private Entry<K, V>[] entries;
+    private final Entry<K, V>[] entries;
     private int size;
 
     public MyHashMap() {
