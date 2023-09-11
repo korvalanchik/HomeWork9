@@ -1,4 +1,7 @@
 Реалізация ArrayList   
 Реалізация LinkedList   
-Start Demo
+Реалізация Queue   
+Реалізация Stack   
+Реалізация HashMap   
+**Start Demo**
 # HomeWork9
